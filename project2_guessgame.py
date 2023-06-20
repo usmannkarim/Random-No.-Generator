@@ -4,7 +4,7 @@ guesses=0
 userguess=None
 while(randomnumber != userguess):
     guesses +=1
-    userguess=int(input("enter your guess:"))
+    userguess=int(input("enter your guess: "))
     if(userguess==randomnumber):
         print("you guessed it right!")
     else:
