@@ -4,14 +4,14 @@ guesses=0
 userguess=None
 while(randomnumber != userguess):
     guesses +=1
-    userguess=int(input("enter your guess: "))
+    userguess=int(input("enter your guess:"))
     if(userguess==randomnumber):
         print("you guessed it right!")
     else:
         if(userguess>randomnumber):
-            print("you guessed it wrong! enter a smaller number")
+            print("you guessed it wrong!, enter a smaller number")
         else:
-            print("you guessed it wrong! enter a larger number")
+            print("you guessed it wrong!, enter a larger number")
 print(f"the guessed the number in {guesses} guesses")
 with open('hiscorepro.txt','r')as f:
     hiscorepro=int(f.read())
